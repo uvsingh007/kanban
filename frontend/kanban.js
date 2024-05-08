@@ -23,7 +23,7 @@ const viewTaskForm = document.querySelector("#viewTaskForm");
 const statusSelectView = document.querySelector("#statusSelectView");
 const updatesubTaskBtnUVSing = document.querySelector("#updatesubTaskBtnUVSing");
 
-const BaseURL = `https://all-backend-servers-1.onrender.com`;
+const BaseURL = `https://kanban-gtju.onrender.com`;
 
 let currentBoardIfForCheck = null;
 
@@ -87,7 +87,7 @@ createBoardInputBtn.addEventListener("click", () => {
 async function getBoards(boardId = null) {
   try {
     const token = localStorage.getItem("token");
-    let url = `https://all-backend-servers-1.onrender.com/board`;
+    let url = `https://kanban-gtju.onrender.com/board`;
     if (boardId) {
       url += `/${boardId}`;
     }

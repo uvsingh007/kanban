@@ -30,7 +30,7 @@ async function loginUser(){
             email:loginEmailInput.value,
             password:loginPasswordInput.value
         }
-        const res = await fetch("http://localhost:3000/user/login",{
+        const res = await fetch("https://kanban-gtju.onrender.com/user/login",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",
@@ -70,7 +70,7 @@ async function registerUser() {
             password
         };
 
-        const res = await fetch("http://localhost:3000/user/register", {
+        const res = await fetch("https://kanban-gtju.onrender.com/user/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
